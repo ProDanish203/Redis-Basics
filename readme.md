@@ -32,3 +32,47 @@ get key         // Value
   - Key: value pairs
 - Sorted Set (zadd, zrange, zrank)
   - Works as the priority queue
+- Streams (xadd, xread, xlen)
+  - Append-only log structure
+  - Used for messaging and event sourcing
+- Geospatial (geoadd, geodist, georadius)
+  - Store and query geospatial data
+
+### Key Commands
+
+- EXPIRE: Set a timeout on key
+- DEL: Delete a key
+- EXISTS: Check if a key exists
+- KEYS: Find all keys matching a pattern
+- FLUSHALL: Remove all keys from all databases
+
+### Pub/Sub
+
+- PUBLISH: Send a message to a channel
+- SUBSCRIBE: Listen for messages on a channel
+
+### Transactions
+
+- MULTI: Start a transaction block
+- EXEC: Execute all commands in a transaction
+- DISCARD: Discard a transaction
+
+### Persistence
+
+- RDB: Point-in-time snapshots
+- AOF: Append-only file for durability
+
+### Replication
+
+- REPLICAOF: Make the server a replica of another instance
+
+### Cluster
+
+- CLUSTER INFO: Provides information about the cluster state
+
+### Security
+
+- AUTH: Authenticate to the server
+- ACL: Access Control Lists for fine-grained permissions
+
+Remember to consult the official Redis documentation for more detailed information and best practices.
